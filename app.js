@@ -17,6 +17,8 @@ const server = app.listen(port, (error) => {
 
 // Use Node.js body parsing middleware
 app.use(bodyParser.json());
+// Setting up the public directory
+app.use(express.static('public'));
 app.use(bodyParser.urlencoded({
     extended: true,
 }));

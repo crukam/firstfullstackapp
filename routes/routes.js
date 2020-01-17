@@ -42,7 +42,7 @@ const router = app => {
         response.send(footmatchs);
     });
     app.get('/index',(request,response)=>{
-        response.sendFile('./index.html',{ root: __dirname });
+        response.sendFile('./public/index.html',{ root: __dirname });
     });
 }
 
